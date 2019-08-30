@@ -1,6 +1,5 @@
-// ANTES NAO TINHA
+// O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
 
-// DEPOIS
 let pessoas = [{chave: 'lle', matricula: 34144}, {chave: 'mcp', matricula: 36543}, {chave: 'rss', matricula: 34170}];
 
 let matriculaMax = 36000;

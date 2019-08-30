@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.0-rc.0/angular.js" data-semver="1.4.0-rc.0"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+  <p>
+    fade in/fade out demo
+  </p>
+  <p>
+    menu state: {{menuState}}
+  </p>
+  <nav mfb-menu position="br" effect="zoomin"  active-icon="ion-edit" 
+       resting-icon="ion-plus-round" toggling-method="click"
+       class="app-menu"
+       menu-state="menuState" ng-class="{'fadeOut' : menuState === 'closed'}">
+    <button mfb-button label="item 1" icon="ion-ios-person"></button>
+    <button mfb-button label="item 2" icon="ion-ios-star"></button>
+    <button mfb-button label="item 2" icon="ion-ios-star"></button>
+    <button mfb-button label="item 2" icon="ion-ios-star"></button>
+    <button mfb-button label="item 2" icon="ion-ios-star"></button>
+    <button mfb-button label="item 2" icon="ion-ios-star"></button>
+  </nav>
+  
+  <script src="app.js"></script>
+  <script src="mfb-directive.js"></script>
+</body>
+
+</html>
